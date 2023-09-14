@@ -206,4 +206,35 @@ Bird size seems to be the best way to isolate each of the listed species, so I'l
   1. Parrot crossbill (female)
   1. Parrot crossbill (male)
   1. Pectoral sandpiper
-
+  1. Pied wagtail (adult)
+  1. Pied wagtail (juvenile)
+  1. Purple sandpiper (winter plumage)
+  1. Quail
+  1. Red-backed shrike (female)
+  1. Red-backed shrike (male)
+  1. Red-necked phalarope (adult female)
+  1. Red-necked phalarope (winter plumage)
+  1. Redwing
+  1. Ringed plover (juvenile)
+  1. Ringed plover (summer plumage)
+  1. Rock pipit
+  1. Sanderling (summer plumage)
+  1. Sanderling (winter plumage)
+  1. Scottish crossbill (female)
+  1. Scottish crossbill (male)
+  1. Shore lark
+  1. Skylark
+  1. Song thrush
+  1. Starling (adult)
+  1. Starling (juvenile)
+  1. Storm petrel
+  1. Swallow
+  1. Swift
+  1. Water pipit (summer plumage)
+  1. Water pipit (winter plumage)
+  1. Waxwing
+  1. Wood sandpiper
+  1. Wryneck
+  1. Yellow wagtail (female)
+  1. Yellow wagtail (male)
+  
