@@ -456,3 +456,57 @@ Bird size seems to be the best way to isolate each of the listed species, so I'l
   1. Shelduck (adult)
   1. Shelduck (juvenile)
   1. Velvet scoter
+- Larger than a mallard (53 results)
+  1. Bewick's swan (adult)
+  1. Bewick's swan (juvenile)
+  1. Bittern
+  1. Canada goose
+  1. Capercaillie (female)
+  1. Capercaillie (male)
+  1. Cormorant (adult)
+  1. Cormorant (juvenile)
+  1. Crane (adult)
+  1. Crane (juvenile)
+  1. Egyptian goose (adult)
+  1. Egyptian goose (juvenile)
+  1. Gannet (adult)
+  1. Gannet (juvenile)
+  1. Glaucous gull (adult/winter plumage)
+  1. Glaucous gull (first-winter plumage)
+  1. Golden eagle (adult)
+  1. Golden eagle (juvenile)
+  1. Golden pheasant (female)
+  1. Golden pheasant (male)
+  1. Goosander (female)
+  1. Goosander (male)
+  1. Great black-backed gull (first-winter plumage)
+  1. Great black-backed gull (second-winter plumage)
+  1. Great black-backed gull (summer plumage)
+  1. Great northern diver (first-winter plumage)
+  1. Great northern diver (summer plumage)
+  1. Great white egret
+  1. Grey heron
+  1. Greylag goose
+  1. Little egret
+  1. Mute swan (adult)
+  1. Mute swan (juvenile)
+  1. Pheasant (female)
+  1. Pheasant (male)
+  1. Pink-footed goose
+  1. Pintail (female)
+  1. Pintail (male)
+  1. Raven
+  1. Red kite
+  1. Shag (adult)
+  1. Shag (juvenile)
+  1. Spoonbill
+  1. Taiga bean goose
+  1. Tundra bean goose
+  1. White-fronted goose
+  1. White-tailed eagle (adult)
+  1. White-tailed eagle (juvenile)
+  1. Whooper swan (adult)
+  1. Whooper swan (juvenile)
+  1. Yellow-legged gull (first-winter plumage)
+  1. Yellow-legged gull (second-winter plumage)
+  1. Yellow-legged gull (summer plumage)
