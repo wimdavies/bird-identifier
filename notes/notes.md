@@ -194,4 +194,16 @@ Bird size seems to be the best way to isolate each of the listed species, so I'l
   1. Dunlin (winter plumage)
   1. Grey phalarope
   1. Grey wagtail (female)
+  1. Grey wagtail (male)
+  1. Hawfinch
+  1. Jack snipe
+  1. Kingfisher
+  1. Lapland bunting (winter plumage)
+  1. Leach's petrel
+  1. Little auk (winter plumage)
+  1. Little ringed plover (adult summer plumage)
+  1. Little ringed plover (juvenile)
+  1. Parrot crossbill (female)
+  1. Parrot crossbill (male)
+  1. Pectoral sandpiper
 
