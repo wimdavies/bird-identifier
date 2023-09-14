@@ -320,3 +320,139 @@ Bird size seems to be the best way to isolate each of the listed species, so I'l
   1. Stock dove
   1. Teal (female)
   1. Teal (male)
+- Between a feral pigeon and a mallard (100 results)
+  1. Arctic skua (dark)
+  1. Arctic skua (pale)
+  1. Avocet
+  1. Bar-tailed godwit (male/summer plumage)
+  1. Bar-tailed godwit (winter plumage)
+  1. Barn owl
+  1. Black grouse (female)
+  1. Black grouse (male)
+  1. Black-headed gull (first-winter plumage)
+  1. Black-headed gull (juvenile)
+  1. Black-headed gull (summer plumage)
+  1. Black-headed gull (winter plumage)
+  1. Black-tailed godwit (summer plumage)
+  1. Black-tailed godwit (winter plumage)
+  1. Carrion crow
+  1. Cattle egret (summer plumage)
+  1. Cattle egret (winter plumage)
+  1. Chough
+  1. Common gull (first-winter plumage)
+  1. Common gull (summer plumage)
+  1. Common gull (winter plumage)
+  1. Common scoter (female)
+  1. Common scoter (male)
+  1. Coot (adult)
+  1. Coot (juvenile)
+  1. Fulmar
+  1. Gadwall (female)
+  1. Gadwall (male)
+  1. Garganey (female)
+  1. Garganey (male)
+  1. Goldeneye (female)
+  1. Goldeneye (male)
+  1. Great crested grebe (summer plumage)
+  1. Great crested grebe (winter plumage)
+  1. Great shearwater
+  1. Guillemot (summer plumage)
+  1. Guillemot (winter plumage)
+  1. Hen harrier (female/juvenile)
+  1. Hen harrier (male)
+  1. Hooded crow
+  1. Kittiwake (adult summer plumage)
+  1. Kittiwake (juvenile)
+  1. Long-eared owl
+  1. Long-tailed duck (female winter plumage)
+  1. Long-tailed duck (male winter)
+  1. Long-tailed skua
+  1. Long-tailed skua (juvenile)
+  1. Magpie
+  1. Mallard (female)
+  1. Mallard (male)
+  1. Mandarin (female)
+  1. Mandarin (male)
+  1. Mediterranean gull (adult winter plumage)
+  1. Mediterranean gull (first-winter plumage)
+  1. Mediterranean gull (summer plumage)
+  1. Montagu's harrier (female)
+  1. Montagu's harrier (male)
+  1. Oystercatcher
+  1. Peregrine (adult)
+  1. Peregrine (juvenile)
+  1. Pochard (female)
+  1. Pochard (male)
+  1. Pomarine skua (juvenile)
+  1. Pomarine skua (pale)
+  1. Razorbill (summer plumage)
+  1. Razorbill (winter plumage)
+  1. Red grouse
+  1. Red-necked grebe (summer plumage)
+  1. Red-necked grebe (winter plumage)
+  1. Ring-necked parakeet
+  1. Rook (adult)
+  1. Rook (juvenile)
+  1. Roseate tern (adult/summer plumage)
+  1. Roseate tern (juvenile)
+  1. Rough-legged buzzard
+  1. Ruddy duck (female)
+  1. Ruddy duck (male)
+  1. Sandwich tern (adult winter plumage)
+  1. Sandwich tern (adult/summer plumage)
+  1. Sandwich tern (juvenile)
+  1. Scaup (female)
+  1. Scaup (male)
+  1. Short-eared owl
+  1. Shoveler (female)
+  1. Shoveler (male)
+  1. Smew (female)
+  1. Smew (male)
+  1. Sooty shearwater
+  1. Sparrowhawk (female)
+  1. Stone-curlew
+  1. Tawny owl
+  1. Tufted duck (female)
+  1. Tufted duck (male)
+  1. Whimbrel
+  1. Wigeon (female)
+  1. Wigeon (male)
+  1. Woodcock
+  1. Woodpigeon (adult)
+  1. Woodpigeon (juvenile)
+  1. [duplicate entry for Woodpigeon (juvenile)]
+- Same size as a mallard (34 results)
+  1. Barnacle goose
+  1. Black-throated diver (summer plumage)
+  1. Black-throated diver (winter)
+  1. Brent goose
+  1. Buzzard
+  1. Curlew
+  1. Eider (female)
+  1. Eider (male)
+  1. Goshawk
+  1. Great skua
+  1. Herring gull
+  1. Herring gull (first-winter plumage)
+  1. Herring gull (second-winter plumage)
+  1. Honey buzzard (female)
+  1. Honey buzzard (male)
+  1. Iceland gull (adult winter plumage)
+  1. Iceland gull (first-winter plumage)
+  1. Lesser black-backed gull
+  1. Lesser black-backed gull (first-winter plumage)
+  1. Lesser black-backed gull (second-winter plumage)
+  1. Mallard (female)
+  1. Mallard (male)
+  1. Marsh harrier (female/juvenile)
+  1. Marsh harrier (male)
+  1. Osprey
+  1. Red-breasted merganser (female)
+  1. Red-breasted merganser (male)
+  1. Red-crested pochard (female)
+  1. Red-crested pochard (male)
+  1. Red-throated diver (summer plumage)
+  1. Red-throated diver (winter plumage)
+  1. Shelduck (adult)
+  1. Shelduck (juvenile)
+  1. Velvet scoter
