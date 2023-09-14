@@ -237,4 +237,86 @@ Bird size seems to be the best way to isolate each of the listed species, so I'l
   1. Wryneck
   1. Yellow wagtail (female)
   1. Yellow wagtail (male)
-  
+- Same size as a blackbird (37 results)
+  1. Black tern (summer plumage)
+  1. Black tern (winter plumage)
+  1. Blackbird (adult male)
+  1. Blackbird (juvenile)
+  1. Corncrake
+  1. Dotterel (adult)
+  1. Dotterel (juvenile)
+  1. Fieldfare
+  1. Golden oriole (female)
+  1. Golden oriole (male)
+  1. Great grey shrike
+  1. Great spotted woodpecker (adult)
+  1. Great spotted woodpecker (juvenile)
+  1. Green sandpiper
+  1. Hoopoe
+  1. Knot (adult summer plumage)
+  1. Knot (winter plumage)
+  1. Little grebe (summer plumage)
+  1. Little grebe (winter plumage)
+  1. Little gull (adult summer plumage)
+  1. Little gull (adult winter plumage)
+  1. Little gull (first-winter plumage)
+  1. Little owl
+  1. Little tern (juvenile)
+  1. Little tern (summer plumage)
+  1. Merlin (female/juvenile)
+  1. Merlin (male)
+  1. Nightjar
+  1. Redshank (summer plumage)
+  1. Ring ouzel (female)
+  1. Ring ouzel (male)
+  1. Ruff (female)
+  1. Snipe
+  1. Spotted crake
+  1. Turnstone (summer plumage)
+  1. Turnstone (winter plumage)
+  1. Water rail
+- Between a blackbird and a feral pigeon (7 results)
+  1. Golden plover (summer plumage)
+  1. Golden plover (winter and juvenile plumage)
+  1. Grey partridge
+  1. Grey plover (summer plumage)
+  1. Grey plover (winter plumage)
+  1. Mistle thrush
+  1. Turtle dove
+- Same size as a feral pigeon (36 results)
+  1. Arctic tern (adult)
+  1. Arctic tern (juvenile)
+  1. Black guillemot (summer plumage)
+  1. Black guillemot (winter plumage)
+  1. Black-necked grebe (summer plumage)
+  1. Black-necked grebe (winter plumage)
+  1. Collared dove
+  1. Common tern (adult summer plumage)
+  1. Common tern (juvenile)
+  1. Cuckoo (grey)
+  1. Cuckoo (juvenile)
+  1. Green woodpecker (adult)
+  1. Green woodpecker (juvenile)
+  1. Greenshank
+  1. Hobby
+  1. Jackdaw
+  1. Jay
+  1. Kestrel
+  1. Lapwing
+  1. Manx shearwater
+  1. Moorhen (adult)
+  1. Moorhen (juvenile)
+  1. Ptarmigan
+  1. Puffin (first-winter plumage)
+  1. Puffin (summer plumage)
+  1. Red-legged partridge
+  1. Rock dove (feral pigeon)
+  1. Ruff (male summer plumage)
+  1. Slavonian grebe (summer plumage)
+  1. Slavonian grebe (winter plumage)
+  1. Sparrowhawk (male)
+  1. Spotted redshank (summer plumage)
+  1. Spotted redshank (winter plumage)
+  1. Stock dove
+  1. Teal (female)
+  1. Teal (male)
