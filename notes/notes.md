@@ -182,4 +182,16 @@ Bird size seems to be the best way to isolate each of the listed species, so I'l
   1. Yellowhammer (female)
   1. Yellowhammer (male)
 - Between a robin and a blackbird (55 results)
+  1. Blackbird (adult male)
+  1. Blackbird (juvenile)
+  1. Common sandpiper
+  1. Corn bunting
+  1. Curlew sandpiper (juvenile)
+  1. Curlew sandpiper (summer plumage)
+  1. Dipper (adult)
+  1. Dipper (juvenile)
+  1. Dunlin (summer plumage)
+  1. Dunlin (winter plumage)
+  1. Grey phalarope
+  1. Grey wagtail (female)
 
