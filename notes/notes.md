@@ -510,3 +510,7 @@ Bird size seems to be the best way to isolate each of the listed species, so I'l
   1. Yellow-legged gull (first-winter plumage)
   1. Yellow-legged gull (second-winter plumage)
   1. Yellow-legged gull (summer plumage)
+
+I've tabulated these in a Google Sheet, so that I can start making sense of them as data (and parse out the deliberate duplicates that exist in this filtered presentation).
+It's becoming clear that as there's no API endpoint exposed for the RSPB tool's requests (the responses are XHR objects that update the page), I will have to experiment with some web scraping in order to capture data that would make this project possible. I'll need to store it in a database of my own, and build an API to serve it to the frontend filtering interface.
+Also, depending on how the RSPB view my use of their materials in this project, I may need the RSPB's explicit permission to link to the bird illustration images used in their bird identifier. I have requested this. I've looked into some potential public domain illustrations as a back-up plan, but would prefer not to have to use them. Not only are they less clear and thus less useful to the viewer, but I'm unlikely to find comparable individual images for every species, sexual dimorphism, adult/juvenile etc., and so the whole 'clone' element of this project would fall apart...
