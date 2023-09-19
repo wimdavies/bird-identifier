@@ -2,5 +2,10 @@
   "type": "module",
   "dependencies": {
     "puppeteer": "^21.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1"
   }
 }
