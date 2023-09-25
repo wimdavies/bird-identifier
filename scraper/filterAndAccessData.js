@@ -3,6 +3,7 @@ import puppeteer from 'puppeteer';
 (async () => {
   const browser = await puppeteer.launch({
     headless: false,
+    defaultViewport: null,
     args: [
       '--disable-infobars', // Removes the butter bar.
       '--start-maximized',
@@ -37,6 +38,9 @@ import puppeteer from 'puppeteer';
   console.log('waited for results to load');
 
   // use page.$$eval to access desired properties of the result selectors. nth-children up to 12.
+
+  const aToZLinks = await page.$$eval('#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a', (elements) => elements.map((element) => (element.innerText)));
+  console.log(aToZLinks);
 
   await browser.close();
 })();
