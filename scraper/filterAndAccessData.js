@@ -39,14 +39,16 @@ import puppeteer from 'puppeteer';
 
   // use page.$$eval to access desired properties of the result selectors. nth-children up to 12.
 
-  const aToZLinks = await page.$$eval(
+  const resultsData = await page.$$eval(
     '#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a',
     (elements) => elements.map((element) => ({
       name: element.innerText,
-      image: element.querySelector('#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a > div > figure > picture > img').srcset,
+      aToZLink: element.href,
+      modalLink: `https://www.rspb.org.uk${element.getAttribute('data-href')}`,
+      image: `https://www.rspb.org.uk${element.querySelector('#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a > div > figure > picture > img').srcset}`,
     })),
   );
-  console.log(aToZLinks);
+  console.log(resultsData);
 
   await browser.close();
 })();
