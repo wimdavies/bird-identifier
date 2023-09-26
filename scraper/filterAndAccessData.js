@@ -45,7 +45,7 @@ import puppeteer from 'puppeteer';
       name: element.innerText,
       aToZLink: element.href,
       modalLink: `https://www.rspb.org.uk${element.getAttribute('data-href')}`,
-      image: `https://www.rspb.org.uk${element.querySelector('#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a > div > figure > picture > img').srcset}`,
+      image: `https://www.rspb.org.uk${element.querySelector('#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a > div > figure > picture > img').getAttribute('data-srcset')}`,
     })),
   );
   console.log(resultsData);
