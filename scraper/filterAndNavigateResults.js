@@ -37,7 +37,7 @@ import puppeteer from 'puppeteer';
   await page.waitForSelector(firstImgSrcSelector);
   console.log('waited for results to load');
 
-  const resultsData = await page.$$eval(
+  let resultsData = await page.$$eval(
     '#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a',
     (elements) => elements.map((element) => ({
       name: element.innerText,
@@ -53,6 +53,21 @@ import puppeteer from 'puppeteer';
   await page.waitForSelector(nextButtonSelector);
   await page.click(nextButtonSelector);
   console.log('clicked next button');
+
+  await page.waitForSelector(firstImgSrcSelector);
+  console.log('waited for results to load');
+
+  resultsData = await page.$$eval(
+    '#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a',
+    (elements) => elements.map((element) => ({
+      name: element.innerText,
+      aToZLink: element.href,
+      modalLink: `https://www.rspb.org.uk${element.getAttribute('data-href')}`,
+      image: `https://www.rspb.org.uk${element.querySelector('#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a > div > figure > picture > img').getAttribute('data-srcset')}`,
+    })),
+  );
+  console.log(resultsData);
+  console.log('Captured second page of data');
 
   await browser.close();
 })();
