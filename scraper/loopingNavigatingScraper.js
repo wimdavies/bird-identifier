@@ -56,8 +56,8 @@ import puppeteer from 'puppeteer';
     resultsData.push(pageResults);
 
     const nextButtonSelector = '.pagination__link.next';
-    const nextButtonQuery = await page.$(nextButtonSelector);
-    if (!nextButtonQuery) break;
+    const nextButtonExists = await page.$(nextButtonSelector);
+    if (!nextButtonExists) break;
 
     await page.waitForSelector(nextButtonSelector);
     await page.click(nextButtonSelector);
