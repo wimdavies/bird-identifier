@@ -53,7 +53,7 @@ import puppeteer from 'puppeteer';
     console.log(pageResults);
     console.log(`Captured ${counter}th page of data`);
 
-    resultsData.push(pageResults);
+    resultsData.push(...pageResults);
 
     const nextButtonSelector = '.pagination__link.next';
     const nextButtonExists = await page.$(nextButtonSelector);
