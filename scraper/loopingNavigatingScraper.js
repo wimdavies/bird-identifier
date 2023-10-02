@@ -53,10 +53,11 @@ import puppeteer from 'puppeteer';
     console.log(pageResults);
     console.log(`Captured ${counter}th page of data`);
 
-    resultsData.concat(pageResults);
+    resultsData.push(pageResults);
 
     const nextButtonSelector = '.pagination__link.next';
-    if (!nextButtonSelector) break;
+    const nextButtonQuery = await page.$(nextButtonSelector);
+    if (!nextButtonQuery) break;
 
     await page.waitForSelector(nextButtonSelector);
     await page.click(nextButtonSelector);
@@ -64,6 +65,8 @@ import puppeteer from 'puppeteer';
 
     counter += 1;
   }
+
+  console.log(resultsData);
 
   await browser.close();
 })();
