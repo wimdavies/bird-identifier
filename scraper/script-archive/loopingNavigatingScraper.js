@@ -1,4 +1,5 @@
 import puppeteer from 'puppeteer';
+import sizeOptionSelectors from '../utils/sizeOptionSelectors.js';
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -23,7 +24,7 @@ import puppeteer from 'puppeteer';
   await page.click(sizeFilterSelector);
   console.log('entered size filter list dialog');
 
-  const sameSizeAsRobinSelector = '#panel-size > div.bird-identifier__options__submenu__container > li:nth-child(4) > label';
+  const sameSizeAsRobinSelector = sizeOptionSelectors[1];
   await page.waitForSelector(sameSizeAsRobinSelector);
   await page.click(sameSizeAsRobinSelector);
   console.log('clicked "Same size as a robin" filter');
