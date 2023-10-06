@@ -21,8 +21,6 @@ import filterScraper from './utils/filterScraper.js';
 
   const scrapedBirds = [];
 
-  // TODO: loop inside which each filter is applied, filterScraper called, and filter cleared
-
   for (const sizeOptionSelector of sizeOptionSelectors) {
     console.log('top of loop');
 
