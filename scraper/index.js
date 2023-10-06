@@ -7,6 +7,7 @@ import filterScraper from './utils/filterScraper.js';
   const browser = await puppeteer.launch({
     headless: false,
     defaultViewport: null,
+    slowMo: 100,
     args: [
       '--disable-infobars',
       '--start-maximized',
@@ -52,7 +53,7 @@ import filterScraper from './utils/filterScraper.js';
     console.log(scrapedBirds);
 
     const clearAllOptionsSelector = '#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > ul > div > button.bird-identifier__fixed-bottom__current-indicator__item.clear';
-    await page.waitForSelector(clearAllOptionsSelector, { delay: 500 });
+    await page.waitForSelector(clearAllOptionsSelector);
     console.log('waited for current option button');
     await page.$eval(clearAllOptionsSelector, (element) => element.click());
     console.log('cleared current filter option');
