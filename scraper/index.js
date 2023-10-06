@@ -1,6 +1,7 @@
 /* eslint-disable no-restricted-syntax */
 import puppeteer from 'puppeteer';
 import sizeOptionSelectors from './utils/sizeOptionSelectors.js';
+import declineCookies from './utils/declineCookies.js';
 import filterScraper from './utils/filterScraper.js';
 
 (async () => {
@@ -16,11 +17,7 @@ import filterScraper from './utils/filterScraper.js';
   const page = await browser.newPage();
   await page.goto('https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/identify-a-bird/');
 
-  const cookieAcceptSelector = 'body > div.cookie-preferences > div > div:nth-child(2) > div.col-12.col-md-12.col-lg-12.cookie-preferences__default-action-wrapper > div.cookie-preferences__default-action > a';
-  await page.waitForSelector(cookieAcceptSelector);
-  console.log('ready to accept cookies');
-  await page.click(cookieAcceptSelector);
-  console.log('accepted cookies!');
+  await declineCookies(page);
 
   const scrapedBirds = [];
 
