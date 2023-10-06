@@ -4,7 +4,7 @@ export default async function filterScraper(page) {
 
   while (true) {
     const firstImgSrcSelector = '#main-content > div > div:nth-child(2) > div > div.bird-identifier > div.bird-identifier__panel > form > div:nth-child(2) > div > div > div > div.row > a > div > figure > picture > img';
-    await page.waitForSelector(firstImgSrcSelector);
+    await page.waitForSelector(firstImgSrcSelector, { delay: 500 });
     console.log('waited for results to load');
 
     const pageResults = await page.$$eval(
@@ -26,7 +26,8 @@ export default async function filterScraper(page) {
     if (!nextButtonExists) break;
 
     await page.waitForSelector(nextButtonSelector);
-    await page.click(nextButtonSelector);
+    console.log('waited for next button');
+    await page.$eval(nextButtonSelector, (element) => element.click());
     console.log('clicked next button');
 
     counter += 1;
