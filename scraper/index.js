@@ -17,6 +17,15 @@ import declineCookies from './utils/declineCookies.js';
 
   await declineCookies(page);
 
+  const birdCardAnchorSelector = 'body > app-root > ng-component > app-layout-default > main > div > species-search > div > div > div.body.row > div.list > div.cards > rspb-card > article > a';
+  const pageResults = await page.$$eval(birdCardAnchorSelector, (elements) => (
+    elements.map((element) => ({
+      commonName: element.innerText.split('\n')[0],
+      latinName: element.innerText.split('\n')[1],
+    }))
+  ));
+  console.log(pageResults);
+
   await page.screenshot({ path: 'screenshots/a-z_screenshot.png' });
   await browser.close();
 })();
