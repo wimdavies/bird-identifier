@@ -22,6 +22,7 @@ import declineCookies from './utils/declineCookies.js';
     elements.map((element) => ({
       commonName: element.innerText.split('\n')[0],
       latinName: element.innerText.split('\n')[1],
+      link: element.href,
     }))
   ));
   console.log(pageResults);
