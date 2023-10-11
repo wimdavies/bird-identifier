@@ -1,5 +1,9 @@
 # Screenshots folder in /scraper
 screenshots/
+# File output folder /scraper
+file-output/
+# JSON from newly-discovered API endpoint
+apiResults.json
 
 # Logs
 logs
