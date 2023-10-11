@@ -17,16 +17,42 @@ import declineCookies from './utils/declineCookies.js';
 
   await declineCookies(page);
 
-  const birdCardAnchorSelector = 'body > app-root > ng-component > app-layout-default > main > div > species-search > div > div > div.body.row > div.list > div.cards > rspb-card > article > a';
-  const pageResults = await page.$$eval(birdCardAnchorSelector, (elements) => (
-    elements.map((element) => ({
-      commonName: element.innerText.split('\n')[0],
-      latinName: element.innerText.split('\n')[1],
-      link: element.href,
-    }))
-  ));
-  console.log(pageResults);
+  const allResults = [];
 
-  await page.screenshot({ path: 'screenshots/a-z_screenshot.png' });
+  while (true) {
+    const currentPageNumberSelector = 'button.button.current.ng-star-inserted';
+    await page.waitForSelector(currentPageNumberSelector);
+    const currentPageNumber = await page.$eval(
+      currentPageNumberSelector,
+      (element) => element.innerText,
+    );
+
+    const birdCardAnchorSelector = 'body > app-root > ng-component > app-layout-default > main > div > species-search > div > div > div.body.row > div.list > div.cards > rspb-card > article > a';
+    const pageResults = await page.$$eval(birdCardAnchorSelector, (elements) => (
+      elements.map((element) => ({
+        commonName: element.innerText.split('\n')[0],
+        scientificName: element.innerText.split('\n')[1],
+        link: element.href,
+      }))
+    ));
+    console.log(`Page ${currentPageNumber} results:`);
+    console.log(pageResults);
+
+    allResults.push(...pageResults);
+
+    const nextButtonSelector = 'button.next.button';
+    const isNextButton = await page.$(nextButtonSelector);
+    if (!isNextButton) {
+      console.log("Can't find a next page button, going to break the loop now");
+      break;
+    }
+    await page.waitForSelector(nextButtonSelector);
+    await page.click(nextButtonSelector);
+  }
+
+  console.log('All bird results:');
+  console.log(allResults);
+  console.log(`Number of birds found: ${allResults.length}`);
+
   await browser.close();
 })();
