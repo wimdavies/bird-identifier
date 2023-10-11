@@ -1,9 +1,11 @@
 import puppeteer from 'puppeteer';
+import * as fs from 'fs';
 import declineCookies from './utils/declineCookies.js';
 
 (async () => {
   const browser = await puppeteer.launch({
     headless: false,
+    devtools: true,
     defaultViewport: null,
     // slowMo option slows all operations down to assist debugging
     slowMo: 100,
@@ -13,7 +15,7 @@ import declineCookies from './utils/declineCookies.js';
     ],
   });
   const page = await browser.newPage();
-  await page.goto('https://www.rspb.org.uk/birds-and-wildlife/a-z');
+  await page.goto('https://www.rspb.org.uk/birds-and-wildlife/a-z?page=2');
 
   await declineCookies(page);
 
@@ -47,12 +49,17 @@ import declineCookies from './utils/declineCookies.js';
       break;
     }
     await page.waitForSelector(nextButtonSelector);
-    await page.click(nextButtonSelector);
+    await Promise.all([
+      page.waitForNavigation({ waitUntil: 'domcontentloaded' }),
+      page.click(nextButtonSelector),
+    ]);
   }
 
   console.log('All bird results:');
   console.log(allResults);
   console.log(`Number of birds found: ${allResults.length}`);
+
+  fs.writeFile('./file-output/birdResults.json', JSON.stringify(allResults), (err) => console.log(err));
 
   await browser.close();
 })();
