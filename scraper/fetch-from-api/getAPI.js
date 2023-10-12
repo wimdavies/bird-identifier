@@ -1,4 +1,7 @@
 // eslint-disable-next-line consistent-return
+
+import * as fs from 'fs';
+
 export default async function getAPI() {
   const response = await fetch('https://api-cdn.rspb.org.uk/species?offset=0&limit=12');
   try {
@@ -7,8 +10,21 @@ export default async function getAPI() {
     }
     const data = await response.json();
     const { results } = data.payload;
-    return results;
+    fs.writeFile(
+      './file-output/getApiResults.json',
+      JSON.stringify(results, null, 2),
+      (err) => {
+        if (err) {
+          console.error(err);
+        } else {
+          console.log('Saved results to JSON');
+        }
+      },
+    );
+    // return results;
   } catch (error) {
     console.error(error);
   }
 }
+
+getAPI();
