@@ -1,30 +1,15 @@
-// eslint-disable-next-line consistent-return
-
-import * as fs from 'fs';
-
-export default async function getAPI() {
-  const response = await fetch('https://api-cdn.rspb.org.uk/species?offset=0&limit=12');
+export default async function getAPI(offset) {
+  const response = await fetch(`https://api-cdn.rspb.org.uk/species?limit=1&offset=${offset}`);
   try {
     if (!response.ok) {
       throw new Error(`HTTP error: status ${response.status}`);
     }
     const data = await response.json();
-    const { results } = data.payload;
-    fs.writeFile(
-      './file-output/getApiResults.json',
-      JSON.stringify(results, null, 2),
-      (err) => {
-        if (err) {
-          console.error(err);
-        } else {
-          console.log('Saved results to JSON');
-        }
-      },
-    );
-    // return results;
+    if (data.status !== 200) {
+      return [`Result for offset ${offset} is null`];
+    }
+    return data.payload.results;
   } catch (error) {
     console.error(error);
   }
 }
-
-getAPI();
